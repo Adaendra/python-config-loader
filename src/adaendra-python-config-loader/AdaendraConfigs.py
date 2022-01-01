@@ -53,3 +53,6 @@ class AdaendraConfigs(object):
 
         def __getattr__(self, name):
             return self.configs_dict[name]
+
+
+__all__ = (AdaendraConfigs.__name__,)

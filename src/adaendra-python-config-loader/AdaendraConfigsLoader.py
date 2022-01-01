@@ -90,7 +90,7 @@ def load_configs():
 
                 config_dict = config_dict | tmp_config_dict
         except FileNotFoundError:
-            print('File not found : ' + file_path)
+            print('[AdaendraConfigsLoader] - File not found : ' + file_path)
 
     AdaendraConfigs(config_dict)
 
