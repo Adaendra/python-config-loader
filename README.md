@@ -1,11 +1,23 @@
 # Python Config Loader
 
-![badge](https://img.shields.io/badge/version-0.2.0-blue)
+![badge](https://img.shields.io/badge/version-1.0.0-blue)
 
 The objective of this library is to easily load external configs for a Python project and use it for anywhere 
 in your project.
 
 ---
+
+## How does it work?
+By default, it will load a config file called "**application.yaml**" stored in "**/app/resources**".
+
+But you can override :
+- the name of the config file
+- the extension to JSON
+- the path to the directory with the configs files
+
+Also you can define an environment, then 2 files will be loaded :
+- the "common" config file - *application.yaml*
+- the "environment" config file - *application-[environment].yaml*
 
 ## How to use it
 Install with pip
@@ -18,7 +30,8 @@ from AdaendraConfigs import AdaendraConfigs
 print(AdaendraConfigs.configs.abc)
 ```
 
-## Environment variables
+
+## Configuration environment variables
 |Name|Description|Default value|
 |---|---|---|
 |CONFIG_ENVIRONMENT|Environment to load|*None*|
