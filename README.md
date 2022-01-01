@@ -7,6 +7,11 @@ in your project.
 
 ---
 
+## How to use it
+```python
+    print(AdaendraConfigs.configs.abc)
+```
+
 ## Environment variables
 - CONFIG_ENVIRONMENT : ''
 - CONFIG_FOLDER : '/app/resources'

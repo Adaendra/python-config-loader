@@ -2,6 +2,10 @@ import os
 import yaml
 from AdaendraConfigs import AdaendraConfigs
 
+# TODO : Tests unitaires
+# TODO : Documentation (readme et tout)
+# TODO : Commentaires + ménage code
+
 config_folder = "./app/resources"  # TODO : Constantes
 if os.getenv('CONFIG_FOLDER') is not None:
     config_folder = os.getenv('CONFIG_FOLDER')
