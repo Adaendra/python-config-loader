@@ -9,14 +9,18 @@ in your project.
 
 ## How to use it
 ```python
-    print(AdaendraConfigs.configs.abc)
+from AdaendraConfigs import AdaendraConfigs
+
+print(AdaendraConfigs.configs.abc)
 ```
 
 ## Environment variables
-- CONFIG_ENVIRONMENT : ''
-- CONFIG_FOLDER : '/app/resources'
-- CONFIG_FILE_EXTENSION : '.yaml'
-- CONFIG_PROJECT_NAME : 'application'
+|Name|Description|Default value|
+|---|---|---|
+|CONFIG_ENVIRONMENT|Environment to load|*None*|
+|CONFIG_FOLDER|Path to the config files|'/app/resources'|
+|CONFIG_FILE_EXTENSION|File extensions of your config file. Allow : '.yml'/'.yaml'/'.json'|'.yaml'|
+|CONFIG_PROJECT_NAME|Name of your project *(which is generally the name of the config files)*|'application'|
 
 ---
 
