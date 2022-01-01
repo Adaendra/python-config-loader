@@ -1,6 +1,5 @@
 import os
 import yaml
-from AdaendraConfigs import AdaendraConfigs
 from Constants import ENV_CONFIG_FOLDER, ENV_CONFIG_PROJECT_NAME, ENV_CONFIG_FILE_EXTENSION, ENV_CONFIG_ENVIRONMENT, \
     DEFAULT_CONFIG_FOLDER, DEFAULT_CONFIG_PROJECT_NAME, DEFAULT_CONFIG_FILE_EXTENSION, \
     FILE_EXT_YAML, FILE_EXT_YML, FILE_EXT_JSON
@@ -92,7 +91,7 @@ def load_configs():
         except FileNotFoundError:
             print('[AdaendraConfigsLoader] - File not found : ' + file_path)
 
-    AdaendraConfigs(config_dict)
+    return config_dict
 
 
 #if __name__ == "__main__":

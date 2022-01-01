@@ -26,7 +26,7 @@ class AdaendraConfigs(object):
 
     def __getattribute__(self, name):
         if not AdaendraConfigs.configs:
-            load_configs()
+            AdaendraConfigs.configs = AdaendraConfigs.__AdaendraConfigs(load_configs())
             raise AttributeError(
                 f"No configs were loaded on start."
             )
