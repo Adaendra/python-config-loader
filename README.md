@@ -7,5 +7,13 @@ in your project.
 
 ---
 
+## Environment variables
+- CONFIG_ENVIRONMENT : ''
+- CONFIG_FOLDER : '/app/resources'
+- CONFIG_FILE_EXTENSION : '.yaml'
+- CONFIG_PROJECT_NAME : 'application'
+
+---
+
 ## Documentation
 - [PyPi](./documentation/pypi.md)
