@@ -95,5 +95,5 @@ def load_configs():
     AdaendraConfigs(config_dict)
 
 
-if __name__ == "__main__":
-    load_configs()
+#if __name__ == "__main__":
+#    load_configs()
