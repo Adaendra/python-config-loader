@@ -1,4 +1,6 @@
-import os, yaml, logging
+import logging
+import os
+import yaml
 
 from adaendra_python_config_loader.AdaendraConfigs import AdaendraConfigs
 from adaendra_python_config_loader.Constants import ENV_CONFIG_FOLDER, ENV_CONFIG_PROJECT_NAME, \
@@ -81,7 +83,6 @@ def load_configs():
     """
     Retrieve the configs from the configs files and load it into the config singleton.
     """
-    logging.error('--load_configs--')
     config_dict = {}
     for file_path in get_file_list():
         try:
@@ -92,10 +93,8 @@ def load_configs():
 
                 config_dict = config_dict | tmp_config_dict
         except FileNotFoundError:
-            logging.info('[AdaendraConfigsLoader] - File not found : ' + file_path)
+            logging.warning('[AdaendraConfigsLoader] - File not found : ' + file_path)
 
     AdaendraConfigs(config_dict)
 
 
-#if __name__ == "__main__":
-#    load_configs()
