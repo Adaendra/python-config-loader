@@ -8,6 +8,10 @@ in your project.
 ---
 
 ## How to use it
+Install with pip
+> pip install adaendra-python-config-loader
+
+Import the configs and use it!
 ```python
 from AdaendraConfigs import AdaendraConfigs
 
