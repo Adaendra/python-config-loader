@@ -1,7 +1,5 @@
 from adaendra_immutable_dict.AdaendraImmutableDict import AdaendraImmutableDict
 
-from adaendra_python_config_loader.AdaendraConfigsLoader import load_configs
-
 
 class AdaendraConfigs(object):
     """
@@ -26,7 +24,6 @@ class AdaendraConfigs(object):
 
     def __getattribute__(self, name):
         if not AdaendraConfigs.configs:
-            AdaendraConfigs.configs = AdaendraConfigs.__AdaendraConfigs(load_configs())
             raise AttributeError(
                 f"No configs were loaded on start."
             )
